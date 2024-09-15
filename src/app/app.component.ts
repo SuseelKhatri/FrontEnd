@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Frontend';
+  showHeaderFooter =true;
+
+  constructor(private router: Router){
+    this.router.events.subscribe(event=>
+      {
+        if (event instanceof NavigationEnd) {
+          // Check the current route and decide whether to show header/footer
+          this.showHeaderFooter = !['/login'].includes(event.url);
+        }
+      }  
+    );
+  }
 }
