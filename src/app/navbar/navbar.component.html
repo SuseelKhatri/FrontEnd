@@ -1,0 +1,26 @@
+
+<nav class="navbar">
+
+    <div class="navbar-brand">
+        <img src="assets/logo1.png" alt="MyBrand Logo" class="navbar-logo">
+    </div>
+    <div class="navbar-toggle" (click)="toggleNavbar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="navbar-links" [class.active]="isNavbarOpen">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a>
+            <!-- <ul class="submenu">
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Our Story</a></li>
+          </ul> -->
+        </li>
+      <li><a href="#">Products & Services</a></li>
+      <li><a href="#">Report</a></li>
+      <li><a href="#">FAQs</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
