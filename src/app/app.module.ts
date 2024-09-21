@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { CarouselComponent } from './carousel/carousel.component';
+import { HomeComponent } from './home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     LoginComponent,
     HeaderComponent,
     NavbarComponent,
-    CarouselComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,

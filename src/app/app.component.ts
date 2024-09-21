@@ -7,7 +7,7 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Frontend';
+  
   showHeaderFooter =true;
 
   constructor(private router: Router){
