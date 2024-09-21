@@ -52,10 +52,11 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 900; /* Ensure it's below the top bar */
-    font-weight: bold;
-    font-size: larger;
+    font-weight: bold; 
     padding-left: 100px;
     padding-right: 100px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .navbar-brand {
@@ -69,6 +70,7 @@
     margin-top: 10px;
     list-style: none;
     display: flex;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     gap: 2rem;
 }
