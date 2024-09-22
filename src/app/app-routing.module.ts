@@ -3,15 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { IntroductionComponent } from './introduction/introduction.component';
 
 const routes: Routes = [
   // {path:'',component:LoginComponent},
   // { path: '', redirectTo: '/', pathMatch: 'full' }, 
   { path: 'login', component: LoginComponent },
   { path: '', component: HomeComponent },
-  // {path:'introduction',component:}
+  {path:'introduction',component:IntroductionComponent},
   // { path: 'login', redirectTo: 'login', pathMatch: 'full' }, // Optional: Redirect root to login
-  // { path: '**', redirectTo: '' } // 
+  { path: '**', redirectTo: '' } // 
 ];
 
 // for routing

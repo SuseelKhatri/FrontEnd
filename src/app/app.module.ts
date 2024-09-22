@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { RegisteredComponent } from './registered/registered.component';
+import { IntroductionComponent } from './introduction/introduction.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { RegisteredComponent } from './registered/registered.component';
     NavbarComponent,
     HomeComponent,
     FooterComponent,
-    RegisteredComponent
+    RegisteredComponent,
+    IntroductionComponent
   ],
   imports: [
     BrowserModule,

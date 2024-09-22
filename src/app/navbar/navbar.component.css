@@ -34,7 +34,7 @@
 /* Welcome message and date stay to the left */
 .top-bar-info .left-section {
     display: flex;
-    gap: 50px; /* Increased spacing between welcome message and date */
+    gap: 20px; /* Increased spacing between welcome message and date */
     align-items: center;
 }
 
@@ -42,7 +42,7 @@
 .top-bar-info .right-section {
     display: flex;
     align-items: center;
-    gap: 30px; /* Space between email and MFI STR */
+    gap: 20px; /* Space between email and MFI STR */
 }
 
 /* General text inside top bar */
@@ -80,15 +80,15 @@
 .mfi-str {
     background-color: #007bff;
     color: #fff;
-    padding: 5px 15px;
+    padding: 5px 12px;
     border-radius: 20px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 200;
     transition: background-color 0.3s ease;
 }
 
 .mfi-str:hover {
-    background-color: #0056b3;
+    background-color:#ff6600;
 }
 
 /* Navbar Styling */
@@ -108,8 +108,8 @@
 
 /* Navbar logo */
 .navbar-brand img {
-    height: 50px;
-    transition: transform 0.3s ease;
+    height: 55px;
+    transition: transform 0.2s ease;
 }
 
 .navbar-brand img:hover {
