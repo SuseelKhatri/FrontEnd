@@ -1,0 +1,118 @@
+/* Section Title Styling */
+.section-title-registered {
+    font-size: 2.8rem; /* Increased font size for better readability */
+    font-weight: 700;
+    color: #0056b3; /* Stronger blue color for the title */
+    letter-spacing: 0.5px; /* Slight letter spacing for elegance */
+    margin-bottom: 40px;
+    position: relative;
+    text-transform: capitalize; /* Capitalized style for a professional look */
+    font-family: 'Roboto', sans-serif; /* Modern and clean font */
+}
+
+/* Title underline effect */
+.section-title-registered::after {
+    content: '';
+    width: 80px; /* Increased width for better visual balance */
+    height: 4px;
+    background-color: #ff6600;
+    position: absolute;
+    bottom: -15px; /* More space below the underline */
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* Indicator Styling */
+.indicator {
+    background: linear-gradient(135deg, #f8f9fa, #e0e0e0); /* Gradient background */
+    border: 2px solid #e0e0e0; /* Subtle border for separation */
+    padding: 30px 20px;
+    border-radius: 15px; /* More rounded corners for a softer look */
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+    width: 100%; /* Full width to make all indicators uniform */
+    max-width: 200px; /* Slightly larger width for better visual balance */
+    height: 220px; /* Fixed height to ensure equal size */
+    margin: 0 auto; /* Center the indicators */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    color: #333; /* Default text color */
+    position: relative;
+    overflow: hidden; /* Hide overflow for hover effect */
+    background-color: #ffffff;
+}
+
+/* Hover effect on indicators */
+.indicator:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(135deg, #ff9933, #ff6600); /* Colorful gradient on hover */
+    color: white; /* Change text to white on hover */
+    box-shadow: 0 10px 30px rgba(255, 102, 0, 0.4); /* Stronger shadow */
+}
+
+/* Hover effect: Change number to orange */
+.indicator:hover .indicator-number {
+    color: #fff; /* White number on hover for contrast */
+}
+
+/* Hover effect: Add glowing border */
+.indicator:hover {
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Transparent white border */
+    box-shadow: 0 10px 40px rgba(0, 86, 179, 0.3); /* Glow effect */
+}
+
+/* Number Styling */
+.indicator-number {
+    font-size: 3.2rem; /* Large number size for emphasis */
+    font-weight: 700;
+    color: #0056b3; /* Stronger blue for the number */
+    margin-bottom: 8px;
+    transition: color 0.4s ease; /* Smooth color transition */
+    font-family: 'Poppins', sans-serif; /* Modern font for numbers */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Slight shadow for a more polished look */
+}
+
+/* Text Styling */
+.indicator-text {
+    font-size: 1.1rem; /* Slightly larger for better readability */
+    font-weight: 500; /* Medium weight for better emphasis */
+    color: #333; /* Default color */
+    text-transform: capitalize; /* Capitalized for uniformity */
+    margin-top: 12px;
+    transition: color 0.4s ease; /* Smooth color transition */
+    font-family: 'Roboto', sans-serif; /* Clean and modern font */
+}
+
+/* Flexbox to ensure equal height across all indicators */
+.indicator-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between indicators */
+}
+
+.container-registered {
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .indicator-number {
+        font-size: 2.7rem;
+    }
+
+    .indicator-text {
+        font-size: 1rem;
+    }
+
+    .indicator {
+        max-width: 160px; /* Adjust size for smaller screens */
+        height: 200px;
+    }
+}
+    

@@ -1,67 +1,74 @@
 
 <!-- Carousel -->
-<!-- Carousel -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-      <div class="carousel-item active">
-          <img src="assets/image1.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Image 1">
+    <div class="carousel-item active">
+      <img src="assets/image1.jpg" class="d-block w-100 carousel-image" alt="Image 1">
+      <div class="carousel-caption d-md-block">
+        <h1>Welcome to Our Bureau</h1>
+        <p>Providing reliable credit information to empower better financial decisions.</p>
+        <a href="#" class="carousel-btn">Learn More</a>
       </div>
-      <div class="carousel-item">
-          <img src="assets/image2.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Image 2">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/image2.jpg" class="d-block w-100 carousel-image" alt="Image 2">
+      <div class="carousel-caption d-md-block">
+        <h1>Our Mission</h1>
+        <p>We aim to reduce risks and costs associated with lending across the financial sector.</p>
+        <a href="#" class="carousel-btn">Explore</a>
       </div>
-      <div class="carousel-item">
-          <img src="assets/image3.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Image 3">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/image3.jpg" class="d-block w-100 carousel-image" alt="Image 3">
+      <div class="carousel-caption d-md-block">
+        <h1>Empowering the Future</h1>
+        <p>Leveraging data and insights to help institutions grow with confidence.</p>
+        <a href="#" class="carousel-btn">Discover</a>
       </div>
+    </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
   </a>
 </div>
-<!--  -->
-<!-- button -->
-<div class="container my-4">
+
+<!-- Buttons Section -->
+<div class="container my-5">
   <div class="row justify-content-center text-center">
     <div class="col-md-3 mx-2 mb-3">
-      <a href="#" class="btn btn-primary btn-block custom-btn">
+      <a href="#" class="btn btn-gradient custom-btn">
         <i class="bi bi-chevron-right"></i> Blacklist Downloads
       </a>
     </div>
     <div class="col-md-3 mx-2 mb-3">
-      <a href="#" class="btn btn-primary btn-block custom-btn">
+      <a href="#" class="btn btn-gradient custom-btn">
         <i class="bi bi-chevron-right"></i> Access Silver Blade System
       </a>
     </div>
     <div class="col-md-3 mx-2 mb-3">
-      <a href="#" class="btn btn-primary btn-block custom-btn">
+      <a href="#" class="btn btn-gradient custom-btn">
         <i class="bi bi-chevron-right"></i> IFF File Submission Portal
       </a>
     </div>
-    <!-- <div class="col-md-3 mx-2 mb-3">
-      <a href="#" class="btn btn-primary btn-block custom-btn">
-        <i class="bi bi-chevron-right"></i> Document Submission Portal
-      </a>
-    </div> -->
   </div>
-
-  <div class="row justify-content-center mt-2 text-center">
+  <div class="row justify-content-center text-center">
     <div class="col-md-3 mx-2 mb-3">
-      <a href="#" class="btn btn-primary btn-block custom-btn">
+      <a href="#" class="btn btn-gradient custom-btn">
         <i class="bi bi-chevron-right"></i> Document Submission Portal
       </a>
     </div>
-
     <div class="col-md-3 mx-2 mb-3">
-      <a href="#" class="btn btn-primary btn-block custom-btn">
+      <a href="#" class="btn btn-gradient custom-btn">
         <i class="bi bi-chevron-right"></i> Secured Transaction Registry
       </a>
     </div>
@@ -69,79 +76,66 @@
 </div>
 <!--  -->
 
-
 <!-- Benefits to members -->
 <div class="container my-5">
   <div class="row text-center">
-    <h2 class="mb-4">Benefits to Members and Others</h2>
+    <h2 class="mb-5 section-title-benefit">Benefits to Members and Others</h2>
   </div>
   
   <div class="row justify-content-center">
     <!-- First Item -->
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="assets/service1.jpg" class="card-img-top" alt="Business Loan">
+    <div class="col-md-3 mb-4">
+      <div class="card h-100 shadow-sm card-hover">
+        <img src="assets/service1.jpg" class="card-img-top img-fluid" alt="Business Loan">
         <div class="card-body">
           <h5 class="card-title">The Borrowers</h5>
           <p class="card-text">
-            Will have faster and easier access to credit and are entitled to reduced cost of borrowing in case of demonstrated credit performance.
+            Faster and easier access to credit and reduced cost of borrowing in case of demonstrated credit performance.
           </p>
         </div>
       </div>
     </div>
 
     <!-- Second Item -->
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="assets/service2.jpg" class="card-img-top" alt="Small Business">
+    <div class="col-md-3 mb-4">
+      <div class="card h-100 shadow-sm card-hover">
+        <img src="assets/service2.jpg" class="card-img-top img-fluid" alt="Small Business">
         <div class="card-body">
           <h5 class="card-title">For Small and Medium Enterprises</h5>
           <p class="card-text">
-            It reduces the high risk perception among lenders, reduces the cost of borrowing, and gives them faster and easier access to credit.
+            Reduces risk perception, lowers borrowing costs, and provides faster access to credit.
           </p>
         </div>
       </div>
     </div>
 
     <!-- Third Item -->
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="assets/service3.jpg" class="card-img-top" alt="Banks and Financial Institutions">
+    <div class="col-md-3 mb-4">
+      <div class="card h-100 shadow-sm card-hover">
+        <img src="assets/service3.jpg" class="card-img-top img-fluid" alt="Banks and Financial Institutions">
         <div class="card-body">
           <h5 class="card-title">Banks and Financial Institutions</h5>
           <p class="card-text">
-            Are benefited in terms of increased market penetration, operating efficiencies, and comprehensive risk review of clients.
+            Increased market penetration, operating efficiencies, and comprehensive risk reviews.
           </p>
         </div>
       </div>
     </div>
 
     <!-- Fourth Item -->
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="assets/service4.jpg" class="card-img-top" alt="For Regulator">
+    <div class="col-md-3 mb-4">
+      <div class="card h-100 shadow-sm card-hover">
+        <img src="assets/service4.jpg" class="card-img-top img-fluid" alt="For Regulator">
         <div class="card-body">
-          <h5 class="card-title">For Regulator</h5>
+          <h5 class="card-title">For Regulators</h5>
           <p class="card-text">
-            Helps reduce non-performing loans and provides a credit risk monitoring mechanism without increasing risk.
+            Helps reduce non-performing loans and provides a credit risk monitoring mechanism.
           </p>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-
-
-<!--  -->
-
-
-<!-- registered Members -->
-<div class="containers">
-  
-</div>
-
-<!--  -->
 
 
 <script>

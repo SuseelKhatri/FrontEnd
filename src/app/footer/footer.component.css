@@ -1,0 +1,132 @@
+/* Footer General Styling */
+.footer {
+    background-color: #202736; /* Dark blue background */
+    color: #f1f1f1; /* Light text color */
+}
+
+.footer .footer-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+/* Underline effect for headings */
+.footer .footer-heading::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #ff6600; /* Orange accent */
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 2px;
+}
+
+.footer .footer-links a {
+    color: #d1d7e0; /* Slightly lighter text for links */
+    text-decoration: none;
+    display: block;
+    padding: 0.3rem 0;
+    transition: color 0.3s ease;
+}
+
+.footer .footer-links a:hover {
+    color: #ff6600; /* Hover color for links */
+}
+
+/* Contact Section Styling */
+.footer-social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-social-links a:hover {
+    color: #ff6600; /* Orange hover effect */
+}
+
+.footer-contact {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #d1d7e0;
+}
+
+.footer-contact i {
+    margin-right: 5px;
+}
+
+/* Spokesperson Styling */
+.footer-spokesperson img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #ff6600;
+}
+
+.footer-spokesperson p {
+    font-size: 0.9rem;
+    color: #d1d7e0;
+    margin-bottom: 0.2rem;
+}
+
+/* Footer Bottom Section */
+.footer-bottom-text {
+    color: #d1d7e0;
+    font-size: 0.9rem;
+}
+
+.footer-bottom-text a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.footer-bottom-text a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer .footer-spokesperson {
+        text-align: center;
+    }
+
+    .footer .footer-spokesperson img {
+        margin: 0 auto;
+    }
+
+    .footer .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Mini Footer Styling */
+.mini-footer {
+    background-color: #0e1726; /* Darker background for separation */
+    color: #d1d7e0; /* Light text for contrast */
+    border-top: 1px solid #ff6600; /* Orange line to separate from main footer */
+}
+
+.mini-footer-text {
+    font-size: 0.85rem; /* Slightly smaller text */
+    color: #d1d7e0;
+}
+
+.mini-footer-text a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.mini-footer-text a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mini-footer-text {
+        font-size: 0.75rem; /* Adjust font size for smaller screens */
+    }
+}

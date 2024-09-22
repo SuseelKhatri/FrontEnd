@@ -1,95 +1,177 @@
-/* Top Bar */
+/* Top Bar Styling */
 .top-bar {
-    background-color: rgb(32, 39, 54); /* Dark background color */
-    color: #fff; /* White text color */
-    padding: 3px 0; /* Adjust height as needed */
-    position: fixed; /* Stick to the top */
-    margin: 0;
+    background: linear-gradient(90deg, rgba(32, 39, 54, 1) 0%, rgba(44, 50, 70, 1) 100%);
+    color: #fff;
+    padding: 10px 0;
     width: 100%;
-    top: 0; /* Align with the very top of the page */
-    z-index: 1000; /* Ensure it stays above other elements */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
 }
 
+/* Top bar content container */
 .top-bar .container {
     display: flex;
-    justify-content: space-between; /* Space out the items */
+    justify-content: space-between;
     align-items: center;
-    padding: 0 2rem; /* Horizontal padding */
+    padding: 0 2rem;
 }
 
+/* Top Bar Info (Welcome, Date, Email, MFI STR) */
+/* The welcome message and date are now spaced out more, and email + MFI STR moved to the right */
 .top-bar-info {
     display: flex;
-    align-items: center; /* Align items vertically center */
-    gap: 30px; /* Space between items */
+    align-items: center;
+    gap: 50px; /* Increased gap between welcome message and date */
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    width: 100%; /* Make top-bar-info take full width */
+    justify-content: space-between; /* Ensures that items are evenly spaced */
 }
 
+/* Welcome message and date stay to the left */
+.top-bar-info .left-section {
+    display: flex;
+    gap: 50px; /* Increased spacing between welcome message and date */
+    align-items: center;
+}
+
+/* Email and MFI STR go to the right */
+.top-bar-info .right-section {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between email and MFI STR */
+}
+
+/* General text inside top bar */
 .top-bar-info span {
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.top-bar-info .welcome-message {
-    font-weight: 10px;
+/* Date icon styling */
+.top-bar-info svg {
+    color: #ff6600;
 }
 
-.top-bar-info .date, 
-.top-bar-info .email, 
-.top-bar-info .mfi-str {
-    font-weight: normal;
+/* Email link styling */
+.top-bar-info .email a {
+    color: #d1e7dd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-.top-bar-info .email {
-    color: #d1e7dd; /* Slightly different color for email */
+.top-bar-info .email a:hover {
+    color: #ff6600;
+    text-decoration: underline;
 }
 
-/* Navbar */
+/* Date text styling */
+.date {
+    color: #e0e0e0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* MFI STR styling */
+.mfi-str {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.mfi-str:hover {
+    background-color: #0056b3;
+}
+
+/* Navbar Styling */
 .navbar {
-    margin-top: 1px; /* Adjust this based on the top bar's height */
-    background-color: #fff;
+    margin-top: 60px;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     position: relative;
-    z-index: 900; /* Ensure it's below the top bar */
-    font-weight: bold; 
-    padding-left: 100px;
-    padding-right: 100px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    z-index: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
 }
 
-.navbar-brand {
-    margin-top: 10px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #333;
+/* Navbar logo */
+.navbar-brand img {
+    height: 50px;
+    transition: transform 0.3s ease;
 }
 
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar links */
 .navbar-links {
-    margin-top: 10px;
     list-style: none;
     display: flex;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    gap: 2rem;
+    gap: 1.5rem;
+    margin: 0;
 }
 
 .navbar-links a {
     text-decoration: none;
     color: #333;
-    font-size: 1rem;
-    transition: color 0.3s ease, background-color 0.3s ease;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
     border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar-links a:hover {
-    color: #fff;
     background-color: #007bff;
+    color: #fff;
 }
 
-/* Hamburger menu styling */
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.7rem 1.2rem;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Hamburger Menu Styling */
 .navbar-toggle {
     display: none;
     flex-direction: column;
@@ -103,14 +185,6 @@
     background-color: #333;
     border-radius: 2px;
 }
-.date {
-    font-size: 1em;
-    color: #fafafa;
-    margin: 0px 250px 0px 0px;  
-  }
-.mfi-str{
-    margin: 0px 0px 0px 0px;   
-}
 
 /* Responsive styles */
 @media (max-width: 1024px) {
@@ -118,37 +192,20 @@
         padding-left: 50px;
         padding-right: 50px;
     }
+
     .top-bar-info {
         flex-direction: column;
         gap: 15px;
     }
+
     .navbar-links {
         flex-direction: column;
         text-align: left;
-    }
-}
-/* Make the top bar sticky */
-.top-bar {
-    position: sticky; /* Use sticky instead of fixed */
-    top: 0;
-    z-index: 1000; /* Ensure it stays on top */
-}
-
-
-
-
-/* Smaller screens (like tablets and smartphones) */
-@media (max-width: 768px) {
-    .navbar-links {
         display: none;
-        flex-direction: column;
         background-color: #fff;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
         padding: 1rem;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
     }
 
     .navbar-links.active {
@@ -158,21 +215,23 @@
     .navbar-toggle {
         display: flex;
     }
+}
 
-    .navbar {
-        padding-left: 20px;
-        padding-right: 20px;
+/* Dropdowns for mobile view */
+@media (max-width: 768px) {
+    .navbar-links {
+        text-align: left;
+        gap: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     .top-bar-info {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar-links {
-        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        width: 100%; /* Full width */
+        justify-content: space-between; 
     }
 
     .navbar-brand {
@@ -183,5 +242,3 @@
         font-size: 0.9rem;
     }
 }
-
-  
