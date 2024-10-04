@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { RegisteredComponent } from './registered/registered.component';
 import { IntroductionComponent } from './introduction/introduction.component';
+import { VisionComponent } from './vision/vision.component';
+import { BoardDirectorsComponent } from './board-directors/board-directors.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { IntroductionComponent } from './introduction/introduction.component';
     HomeComponent,
     FooterComponent,
     RegisteredComponent,
-    IntroductionComponent
+    IntroductionComponent,
+    VisionComponent,
+    BoardDirectorsComponent
   ],
   imports: [
     BrowserModule,

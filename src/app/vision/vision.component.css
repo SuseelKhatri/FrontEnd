@@ -1,0 +1,143 @@
+.container-vision {
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Section Title Styling */
+.section-title-vision {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #0056b3; /* Stronger blue color for the title */
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+/* Title underline effect */
+.section-title-vision::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background-color: #ff6600;
+    position: absolute;
+    bottom: -10px;
+    left: 6%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* Button Styles */
+.btn-gradient {
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Blue gradient */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: left;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(135deg, #ff6600, #ff9933); /* Orange gradient on hover */
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+    text-decoration: none;
+    color: white;
+}
+
+.btn-gradient i {
+    margin-right: 10px;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Subheading */
+h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #0056b3;
+}
+
+/* List Styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title-vision {
+        font-size: 2.4rem;
+    }
+    
+    .btn-gradient {
+        font-size: 1rem;
+    }
+    
+    h4 {
+        font-size: 1.4rem;
+    }
+    
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+   /* top nav bar */
+   .container-page-head {
+    background: linear-gradient(135deg, #0a6ad1 0%, #033b73 100%); /* Gradient effect */
+    padding: 10px 180px; /* Increased vertical padding */
+    border-radius: 0px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: white; /* Text color for contrast */
+    text-align: left; /* Center align text */
+}
+
+.container-page-head h2 {
+    margin: 0; /* Remove default margin */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    font-size: 1rem; /* Larger font size for emphasis */
+    font-weight:normal; /* Bold text for impact */
+    letter-spacing: 1px; /* Slightly increased letter spacing */
+    text-transform: uppercase; /* Uppercase letters for a strong look */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+    animation: fadeInUp 0.4s ease-in-out; /* Animation effect */
+}
+
+.container-page-head p {
+    line-height: 1; /* Improved readability */
+    font-size: 1.2rem; /* Slightly larger font size for paragraphs */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+   /*  */

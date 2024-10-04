@@ -4,6 +4,8 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { IntroductionComponent } from './introduction/introduction.component';
+import { VisionComponent } from './vision/vision.component';
+import { BoardDirectorsComponent } from './board-directors/board-directors.component';
 
 const routes: Routes = [
   // {path:'',component:LoginComponent},
@@ -11,6 +13,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: '', component: HomeComponent },
   {path:'introduction',component:IntroductionComponent},
+  {path:'vision',component:VisionComponent},
+  {path:'bod',component:BoardDirectorsComponent},
   // { path: 'login', redirectTo: 'login', pathMatch: 'full' }, // Optional: Redirect root to login
   { path: '**', redirectTo: '' } // 
 ];
