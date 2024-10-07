@@ -12,6 +12,7 @@ import { RegisteredComponent } from './registered/registered.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { VisionComponent } from './vision/vision.component';
 import { BoardDirectorsComponent } from './board-directors/board-directors.component';
+import { ManagementTeamComponent } from './management-team/management-team.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { BoardDirectorsComponent } from './board-directors/board-directors.compo
     RegisteredComponent,
     IntroductionComponent,
     VisionComponent,
-    BoardDirectorsComponent
+    BoardDirectorsComponent,
+    ManagementTeamComponent
   ],
   imports: [
     BrowserModule,
