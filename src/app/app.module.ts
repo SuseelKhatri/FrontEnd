@@ -13,6 +13,7 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { VisionComponent } from './vision/vision.component';
 import { BoardDirectorsComponent } from './board-directors/board-directors.component';
 import { ManagementTeamComponent } from './management-team/management-team.component';
+import { ProductsServicesComponent } from './products-services/products-services.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ManagementTeamComponent } from './management-team/management-team.compo
     IntroductionComponent,
     VisionComponent,
     BoardDirectorsComponent,
-    ManagementTeamComponent
+    ManagementTeamComponent,
+    ProductsServicesComponent
   ],
   imports: [
     BrowserModule,

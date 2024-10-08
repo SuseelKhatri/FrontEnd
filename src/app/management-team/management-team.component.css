@@ -146,7 +146,87 @@ ul li {
 
 
 
-
+.container-teams {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f4f7fc;
+    margin-top: 10px;
+  }
+  
+  .team-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .team-member {
+    background-color: #2a6699;
+    color: white;
+    padding: 25px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 260px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .team-member h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .team-member p {
+    margin: 10px 0 0;
+    font-size: 14px;
+  }
+  
+  .team-member::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: rotate(45deg);
+    transition: opacity 0.4s ease;
+  }
+  
+  .team-member:hover::before {
+    opacity: 0.2;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-10px);
+    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); */
+  }
+  
+  .team-member:hover h3, 
+  .team-member:hover p {
+    color: linear-gradient(135deg, #ff9933, #ff6600); /* Subtle color change on hover */
+  }
+  
+  .team-member:hover::before {
+    opacity: 0.1;
+  }
+  
+  @media (max-width: 768px) {
+    .team-row {
+      flex-direction: column;
+    }
+    .team-member {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
+  
 
 
 
