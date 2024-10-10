@@ -14,6 +14,7 @@ import { VisionComponent } from './vision/vision.component';
 import { BoardDirectorsComponent } from './board-directors/board-directors.component';
 import { ManagementTeamComponent } from './management-team/management-team.component';
 import { ProductsServicesComponent } from './products-services/products-services.component';
+import { SidebuttonsComponent } from './sidebuttons/sidebuttons.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ProductsServicesComponent } from './products-services/products-services
     VisionComponent,
     BoardDirectorsComponent,
     ManagementTeamComponent,
-    ProductsServicesComponent
+    ProductsServicesComponent,
+    SidebuttonsComponent
   ],
   imports: [
     BrowserModule,

@@ -31,8 +31,8 @@
 }
 
 /* Button Styles */
-.btn-gradient {
-    background: linear-gradient(135deg, #007bff, #0056b3); /* Blue gradient */
+/* .btn-gradient {
+    background: linear-gradient(135deg, #007bff, #0056b3); 
     color: white;
     border: none;
     padding: 5px 10px;
@@ -47,7 +47,7 @@
 }
 
 .btn-gradient:hover {
-    background: linear-gradient(135deg, #ff6600, #ff9933); /* Orange gradient on hover */
+    background: linear-gradient(135deg, #ff6600, #ff9933); 
     box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
     text-decoration: none;
     color: white;
@@ -55,7 +55,7 @@
 
 .btn-gradient i {
     margin-right: 10px;
-}
+} */
 
 /* Paragraph Styles */
 p {
@@ -90,9 +90,9 @@ ul li {
         font-size: 2.4rem;
     }
     
-    .btn-gradient {
+    /* .btn-gradient {
         font-size: 1rem;
-    }
+    } */
     
     h4 {
         font-size: 1.4rem;
