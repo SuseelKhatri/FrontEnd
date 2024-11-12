@@ -60,33 +60,6 @@
 }
 
 
-/* for buttons css only */
-/* .btn-gradient {
-    background: linear-gradient(135deg, #007bff, #0056b3); 
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    text-align: left;
-    display: block;
-    width: 100%;
-    font-size: 1rem;
-    border-radius: 8px;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-    text-transform: uppercase;
-    font-weight: 200;
-}
-
-.btn-gradient:hover {
-    background: linear-gradient(135deg, #ff6600, #ff9933);
-    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
-    text-decoration: none;
-    color: white;
-}
-
-.btn-gradient i {
-    margin-right: 10px;
-} */
-
 /* Paragraph Styles */
 p {
     font-size: 1rem;
@@ -120,10 +93,7 @@ ul li {
         font-size: 2.4rem;
     }
     
-    /* .btn-gradient {
-        font-size: 1rem;
-    } */
-    
+
     h4 {
         font-size: 1.4rem;
     }

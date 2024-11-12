@@ -15,6 +15,7 @@ import { BoardDirectorsComponent } from './board-directors/board-directors.compo
 import { ManagementTeamComponent } from './management-team/management-team.component';
 import { ProductsServicesComponent } from './products-services/products-services.component';
 import { SidebuttonsComponent } from './sidebuttons/sidebuttons.component';
+import { FaqComponent } from './faq/faq.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { SidebuttonsComponent } from './sidebuttons/sidebuttons.component';
     BoardDirectorsComponent,
     ManagementTeamComponent,
     ProductsServicesComponent,
-    SidebuttonsComponent
+    SidebuttonsComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,

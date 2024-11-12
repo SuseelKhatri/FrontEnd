@@ -8,6 +8,7 @@ import { VisionComponent } from './vision/vision.component';
 import { BoardDirectorsComponent } from './board-directors/board-directors.component';
 import { ManagementTeamComponent } from './management-team/management-team.component';
 import { ProductsServicesComponent } from './products-services/products-services.component';
+import { FaqComponent } from './faq/faq.component';
 
 const routes: Routes = [
   // {path:'',component:LoginComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path:'bod',component:BoardDirectorsComponent},
   {path:'management_team',component:ManagementTeamComponent},
   {path:'products_services',component:ProductsServicesComponent},
+  {path:'faqs',component:FaqComponent},
   // { path: 'login', redirectTo: 'login', pathMatch: 'full' }, // Optional: Redirect root to login
   { path: '**', redirectTo: '' } // 
 ];
