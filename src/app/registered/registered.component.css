@@ -95,9 +95,15 @@
 }
 
 .container-registered {
-    padding: 40px 0;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 40px 300px;
+    /* max-width: 1200px; */
+    /* margin-right: 0;
+    margin-left: 0; */
+    background-image: url("/assets/register1.jpg");
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
 }
 
 /* Responsive Design */
