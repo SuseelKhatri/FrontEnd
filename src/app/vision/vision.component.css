@@ -16,6 +16,10 @@
     text-transform: capitalize;
 }
 
+.section-vision{
+    animation: fadeInUp 0.5s ease-in-out; 
+}
+
 /* Title underline effect */
 .section-title-vision::after {
     content: '';

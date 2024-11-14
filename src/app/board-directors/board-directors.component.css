@@ -16,6 +16,10 @@
     position: relative;
     text-transform: capitalize;
 }
+.section-bod{
+
+    animation: fadeInUp 0.5s ease-in-out;
+}
 
 /* Title underline effect */
 .section-title-introduction::after {

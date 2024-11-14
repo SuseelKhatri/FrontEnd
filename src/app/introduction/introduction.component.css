@@ -14,7 +14,12 @@
     margin-bottom: 20px;
     position: relative;
     text-transform: capitalize;
+   
 }
+.introduction-section{
+    animation: fadeInUp 0.5s ease-in-out; 
+}
+
 
 /* Title underline effect */
 .section-title-introduction::after {

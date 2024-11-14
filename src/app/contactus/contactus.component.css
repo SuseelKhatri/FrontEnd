@@ -63,4 +63,5 @@
 
 .container-contactus{
     padding: 10px 30px;
+    animation: fadeInUp 0.5s ease-in-out; 
 }

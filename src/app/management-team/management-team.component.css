@@ -113,6 +113,11 @@ ul li {
 
 /*  */
 
+.section-management-team{
+
+  animation: fadeInUp 0.5s ease-in-out; 
+}
+
 .container-teams {
     display: flex;
     flex-direction: column;
@@ -183,6 +188,8 @@ ul li {
   .team-member:hover::before {
     opacity: 0.1;
   }
+
+
   
   @media (max-width: 768px) {
     .team-row {
