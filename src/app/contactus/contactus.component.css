@@ -1,5 +1,5 @@
- /* top nav bar */
-   .container-page-head {
+/* top nav bar */
+.container-page-head {
     background: linear-gradient(135deg, #0a6ad1 0%, #033b73 100%); /* Gradient effect */
     padding: 10px 180px; /* Increased vertical padding */
     border-radius: 0px; /* Rounded corners */
@@ -37,3 +37,30 @@
 }
 
    /*  */
+
+   .section-title-introduction {
+    font-size: 1.5 rem;
+    font-weight: 700;
+    color: #0056b3; /* Stronger blue color for the title */
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+/* Title underline effect */
+.section-title-introduction::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #ff6600;
+    position: absolute;
+    bottom: -10px;
+    left: 6%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.container-contactus{
+    padding: 10px 30px;
+}

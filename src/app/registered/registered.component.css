@@ -95,11 +95,13 @@
 }
 
 .container-registered {
-    padding: 40px 230px;
+    padding: 30px 210px;
     /* max-width: 1200px; */
     /* margin-right: 0;
     margin-left: 0; */
-    background-image: url("/assets/register1.jpg");
+    font-size: 1.2rem;
+    background-image: url("/assets/whiteimage.jpeg");
+    font-weight: 400;
     background-attachment: fixed; /* Keeps the image fixed while scrolling */
     background-size: cover; /* Ensures the image covers the entire container */
     background-position: center; /* Centers the background image */
