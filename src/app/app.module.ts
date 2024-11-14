@@ -16,6 +16,7 @@ import { ManagementTeamComponent } from './management-team/management-team.compo
 import { ProductsServicesComponent } from './products-services/products-services.component';
 import { SidebuttonsComponent } from './sidebuttons/sidebuttons.component';
 import { FaqComponent } from './faq/faq.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { FaqComponent } from './faq/faq.component';
     ManagementTeamComponent,
     ProductsServicesComponent,
     SidebuttonsComponent,
-    FaqComponent
+    FaqComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,

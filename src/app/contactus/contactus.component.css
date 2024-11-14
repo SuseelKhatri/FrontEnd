@@ -1,0 +1,39 @@
+ /* top nav bar */
+   .container-page-head {
+    background: linear-gradient(135deg, #0a6ad1 0%, #033b73 100%); /* Gradient effect */
+    padding: 10px 180px; /* Increased vertical padding */
+    border-radius: 0px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: white; /* Text color for contrast */
+    text-align: left; /* Center align text */
+}
+
+.container-page-head h2 {
+    margin: 0; /* Remove default margin */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    font-size: 1rem; /* Larger font size for emphasis */
+    font-weight:normal; /* Bold text for impact */
+    letter-spacing: 1px; /* Slightly increased letter spacing */
+    text-transform: uppercase; /* Uppercase letters for a strong look */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+    animation: fadeInUp 0.4s ease-in-out; /* Animation effect */
+}
+
+.container-page-head p {
+    line-height: 1; /* Improved readability */
+    font-size: 1.2rem; /* Slightly larger font size for paragraphs */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+   /*  */
