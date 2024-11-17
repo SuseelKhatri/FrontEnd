@@ -10,6 +10,7 @@ import { ManagementTeamComponent } from './management-team/management-team.compo
 import { ProductsServicesComponent } from './products-services/products-services.component';
 import { FaqComponent } from './faq/faq.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { ReportComponent } from './report/report.component';
 
 const routes: Routes = [
   // {path:'',component:LoginComponent},
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path:'management_team',component:ManagementTeamComponent},
   {path:'products_services',component:ProductsServicesComponent},
   {path:'faqs',component:FaqComponent},
-   {path:'contactus',component:ContactusComponent},
+  {path:'contactus',component:ContactusComponent},
+  {path:'reports',component:ReportComponent},
   // { path: 'login', redirectTo: 'login', pathMatch: 'full' }, // Optional: Redirect root to login
   { path: '**', redirectTo: '' } // 
 ];

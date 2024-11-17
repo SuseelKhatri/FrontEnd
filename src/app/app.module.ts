@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import { ProductsServicesComponent } from './products-services/products-services
 import { SidebuttonsComponent } from './sidebuttons/sidebuttons.component';
 import { FaqComponent } from './faq/faq.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { ReportComponent } from './report/report.component';
 
 
 @NgModule({
@@ -35,11 +37,13 @@ import { ContactusComponent } from './contactus/contactus.component';
     ProductsServicesComponent,
     SidebuttonsComponent,
     FaqComponent,
-    ContactusComponent
+    ContactusComponent,
+    ReportComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [
     provideClientHydration()

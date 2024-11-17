@@ -1,4 +1,27 @@
-/* top nav bar */
+/* Section Title Styling */
+.section-title-introduction {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #0056b3; /* Stronger blue color for the title */
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+/* Title underline effect */
+.section-title-introduction::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background-color: #ff6600;
+    position: absolute;
+    bottom: -10px;
+    left: 6%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
 .container-page-head {
     background: linear-gradient(135deg, #0a6ad1 0%, #033b73 100%); /* Gradient effect */
     padding: 10px 180px; /* Increased vertical padding */
@@ -36,38 +59,54 @@
     }
 }
 
-   /*  */
 
-   .section-title-introduction {
-    font-size: 1.5 rem;
-    font-weight: 700;
-    color: #0056b3; /* Stronger blue color for the title */
-    letter-spacing: 0.5px;
+/* Paragraph Styles */
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Subheading */
+h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
     margin-bottom: 20px;
-    position: relative;
-    text-transform: capitalize;
+    color: #0056b3;
 }
 
-/* Title underline effect */
-.section-title-introduction::after {
-    content: '';
-    width: 80px;
-    height: 4px;
-    background-color: #ff6600;
-    position: absolute;
-    bottom: -10px;
-    left: 6%;
-    transform: translateX(-50%);
-    border-radius: 2px;
+/* List Styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
-.container-contactus{
-   
-    animation: fadeInUp 0.5s ease-in-out; 
+ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
 }
-.address-container{
-    padding: 70px 50px;
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title-introduction {
+        font-size: 2.4rem;
+    }
+    
+
+    h4 {
+        font-size: 1.4rem;
+    }
+    
+    p {
+        font-size: 0.95rem;
+    }
 }
-.map-container{
-    padding: 0;
+.container-introduction {
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
 }
+
+/*  */
