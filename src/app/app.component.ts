@@ -15,7 +15,7 @@ export class AppComponent {
       {
         if (event instanceof NavigationEnd) {
           // Check the current route and decide whether to show header/footer
-          this.showHeaderFooter = !['/login'].includes(event.url);
+          this.showHeaderFooter = !['/login'].includes(event.url); //this makes the showheaderFooter boolen to false
         }
       }  
     );

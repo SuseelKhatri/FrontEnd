@@ -214,24 +214,24 @@
     animation: appear linear;
     animation-timeline: view();
     
-    animation-range: entry 0% cover 15% ;
+    animation-range: entry 0% cover 7% ;
  }
  .benefits2{
   animation: appear linear;
   animation-timeline: view();
   
-  animation-range: entry 0% cover 30% ;
+  animation-range: entry 0% cover 15% ;
 }
  .benefits3{
   animation: appear linear;
   animation-timeline: view();
   
-  animation-range: entry 0% cover 45% ;
+  animation-range: entry 0% cover 35% ;
 } 
 .benefits4{
   animation: appear linear;
   animation-timeline: view();
   
-  animation-range: entry 0% cover 60% ;
+  animation-range: entry 0% cover 50% ;
 }
  
