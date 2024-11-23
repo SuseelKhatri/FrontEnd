@@ -11,22 +11,47 @@ import { ProductsServicesComponent } from './products-services/products-services
 import { FaqComponent } from './faq/faq.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ReportComponent } from './report/report.component';
+import { FrontendLayoutComponent } from './layouts/frontend-layout/frontend-layout.component';
+import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+
 
 const routes: Routes = [
   // {path:'',component:LoginComponent},
   // { path: '', redirectTo: '/', pathMatch: 'full' }, 
-  { path: 'login', component: LoginComponent },
-  { path: '', component: HomeComponent },
-  {path:'introduction',component:IntroductionComponent},
-  {path:'vision',component:VisionComponent},
-  {path:'bod',component:BoardDirectorsComponent},
-  {path:'management_team',component:ManagementTeamComponent},
-  {path:'products_services',component:ProductsServicesComponent},
-  {path:'faqs',component:FaqComponent},
-  {path:'contactus',component:ContactusComponent},
-  {path:'reports',component:ReportComponent},
-  // { path: 'login', redirectTo: 'login', pathMatch: 'full' }, // Optional: Redirect root to login
-  { path: '**', redirectTo: '' } // 
+  {path: 'login', component: LoginComponent },
+
+  // frontend webpage
+  { 
+    path: '',
+    component: FrontendLayoutComponent,
+    children:[
+
+        {path: '', component: HomeComponent },
+        {path:'introduction',component:IntroductionComponent},
+        {path:'vision',component:VisionComponent},
+        {path:'bod',component:BoardDirectorsComponent},
+        {path:'management_team',component:ManagementTeamComponent},
+        {path:'products_services',component:ProductsServicesComponent},
+        {path:'faqs',component:FaqComponent},
+        {path:'contactus',component:ContactusComponent},
+        {path:'reports',component:ReportComponent}
+
+    ]
+  
+  },
+  // 
+  //admin dashboard layout
+  {
+    path:'admin',
+    component: AdminLayoutComponent,
+    children:[
+
+
+
+    ]
+  },
+  // 
+  {path: '**', redirectTo: '' } // 
 ];
 
 // for routing

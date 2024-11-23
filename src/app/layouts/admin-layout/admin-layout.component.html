@@ -1,0 +1,92 @@
+
+<body class="light-mode">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h4>Admin Panel</h4>
+        </div>
+        <ul class="nav flex-column mt-4">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">
+                    <i class="fas fa-home me-2"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-users me-2"></i>
+                    Users
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-chart-bar me-2"></i>
+                    Analytics
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-cog me-2"></i>
+                    Settings
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <div id="content">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <button class="btn btn-outline-secondary ms-auto" id="toggleTheme">
+                    <i class="fas fa-moon me-2"></i>Toggle Theme
+                </button>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <router-outlet></router-outlet> 
+
+
+    
+        </div>
+    </div>
+    <script>
+        // Sidebar toggle
+        document.getElementById('sidebarCollapse').addEventListener('click', () => {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('content').classList.toggle('active');
+        });
+
+        // Theme toggling
+        const toggleTheme = document.getElementById('toggleTheme');
+        const body = document.body;
+
+        toggleTheme.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+            
+            const icon = toggleTheme.querySelector('i');
+            if (body.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+
+
+
+        // Add active class to current nav item
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                navLinks.forEach(l => l.classList.remove('active'));
+                e.target.classList.add('active');
+            });
+        });
+    </script>
+</body>

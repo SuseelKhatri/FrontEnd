@@ -19,6 +19,9 @@ import { SidebuttonsComponent } from './sidebuttons/sidebuttons.component';
 import { FaqComponent } from './faq/faq.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ReportComponent } from './report/report.component';
+import { FrontendLayoutComponent } from './layouts/frontend-layout/frontend-layout.component';
+import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+
 
 
 @NgModule({
@@ -38,7 +41,10 @@ import { ReportComponent } from './report/report.component';
     SidebuttonsComponent,
     FaqComponent,
     ContactusComponent,
-    ReportComponent
+    ReportComponent,
+    FrontendLayoutComponent,
+    AdminLayoutComponent,
+
   ],
   imports: [
     BrowserModule,

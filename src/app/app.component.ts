@@ -8,16 +8,16 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class AppComponent {
   
-  showHeaderFooter =true;
+  // showHeaderFooter =true;
 
-  constructor(private router: Router){
-    this.router.events.subscribe(event=>
-      {
-        if (event instanceof NavigationEnd) {
-          // Check the current route and decide whether to show header/footer
-          this.showHeaderFooter = !['/login'].includes(event.url); //this makes the showheaderFooter boolen to false
-        }
-      }  
-    );
-  }
+  // constructor(private router: Router){
+  //   this.router.events.subscribe(event=>
+  //     {
+  //       if (event instanceof NavigationEnd) {
+  //         // Check the current route and decide whether to show header/footer
+  //         this.showHeaderFooter = !['/login'].includes(event.url); //this makes the showheaderFooter boolen to false
+  //       }
+  //     }  
+  //   );
+  // }
 }

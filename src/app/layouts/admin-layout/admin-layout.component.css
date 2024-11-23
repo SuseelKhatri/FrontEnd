@@ -1,0 +1,128 @@
+:root {
+    --light-bg: #f8f9fa;
+    --light-sidebar: #ffffff;
+    --light-text: #212529;
+    --dark-bg: #1a1a1a;
+    --dark-sidebar: #2d2d2d;
+    --dark-text: #ffffff;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+    overflow-x: hidden;
+}
+
+body.light-mode {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: margin-left 0.3s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+.light-mode #sidebar {
+    background-color: var(--light-sidebar);
+}
+
+.dark-mode #sidebar {
+    background-color: var(--dark-sidebar);
+}
+
+#content {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    transition: margin-left 0.3s;
+}
+
+#content.active {
+    width: 100%;
+    margin-left: 0;
+}
+
+.nav-link {
+    color: inherit;
+    padding: 10px 20px;
+    transition: all 0.3s;
+    border-radius: 5px;
+    margin: 2px 10px;
+}
+
+.nav-link:hover {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.nav-link.active {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.card {
+    transition: background-color 0.3s;
+}
+
+.light-mode .card {
+    background-color: var(--light-sidebar);
+}
+
+.dark-mode .card {
+    background-color: var(--dark-sidebar);
+    color: var(--dark-text);
+}
+
+.stats-card {
+    min-height: 120px;
+}
+
+.chart-container {
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+        margin-left: 0;
+    }
+    #content.active {
+        margin-left: 250px;
+    }
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+#sidebarCollapse {
+    background: transparent;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.dark-mode #sidebarCollapse {
+    color: white;
+}
