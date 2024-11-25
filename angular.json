@@ -36,13 +36,16 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
               "src/styles.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css"
            
             ],
             "scripts": [
                 "node_modules/jquery/dist/jquery.min.js",
-                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+                "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js",
+                "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
                 
             ],
             "server": "src/main.server.ts",
