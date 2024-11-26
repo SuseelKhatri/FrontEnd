@@ -6,13 +6,16 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* Center the login container */
-body {
+/* Full-page gradient background */
+.gradient-background {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to right, #90c3dd, #3a7bd5); /* Gradient background */
+    background: linear-gradient(45deg, #90c3dd, #3a7bd5, #6f8bd7);
+    background-size: 200% 200%;
+    overflow: hidden;
+    transition: background-position 0.1s ease;
 }
 
 /* Styling the login container */
@@ -20,23 +23,37 @@ body {
     width: 100%;
     max-width: 400px;
     padding: 40px;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Softer shadow */
-    border-radius: 12px; /* Rounder corners */
-    backdrop-filter: blur(10px); /* Background blur effect */
-}
-
-/* Styling the form elements */
-h2 {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
     text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-    font-size: 30px; /* Larger font size */
-    font-weight: 600;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Title styling */
+h2 {
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Styling form elements */
 .input-group {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 label {
@@ -52,7 +69,7 @@ input[type="password"] {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 8px; /* Rounder input fields */
+    border-radius: 8px;
     font-size: 15px;
     transition: all 0.3s ease;
     background-color: #f9f9f9;
@@ -64,9 +81,10 @@ input[type="password"]:focus {
     border-color: #3a7bd5;
     outline: none;
     background-color: #fff;
-    box-shadow: 0 0 8px rgba(58, 123, 213, 0.2); /* Glow effect on focus */
+    box-shadow: 0 0 8px rgba(58, 123, 213, 0.2);
 }
 
+/* Button styling */
 button {
     width: 100%;
     padding: 12px;
@@ -77,27 +95,26 @@ button {
     cursor: pointer;
     font-size: 19px;
     font-weight: 600;
-    transition: background-color 0.3s, transform 0.2s; /* Added transition for smooth hover */
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Hover effect for the button */
 button:hover {
     background-color: #3467a5;
-    transform: translateY(-2px); /* Slightly lift the button on hover */
+    transform: translateY(-2px);
 }
 
-/* Add a small animation to the form on page load */
-.login-container {
-    animation: fadeIn 0.5s ease-in-out;
+/* Forgot password link */
+.forgot-password {
+    margin-top: 20px;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+.forgot-password a {
+    color: #3a7bd5;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.forgot-password a:hover {
+    color: #3467a5;
 }
