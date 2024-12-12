@@ -17,11 +17,11 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 
 const routes: Routes = [
   // {path:'',component:LoginComponent},
-  // { path: '', redirectTo: '/', pathMatch: 'full' }, 
+  // { path: '', redirectTo: '/', pathMatch: 'full' },
   {path: 'login', component: LoginComponent },
 
   // frontend webpage
-  { 
+  {
     path: '',
     component: FrontendLayoutComponent,
     children:[
@@ -37,9 +37,9 @@ const routes: Routes = [
         {path:'reports',component:ReportComponent}
 
     ]
-  
+
   },
-  // 
+  //
   //admin dashboard layout
   {
     path:'admin',
@@ -50,11 +50,11 @@ const routes: Routes = [
 
     ]
   },
-  // 
-  {path: '**', redirectTo: '' } // 
+  //
+  {path: '**', redirectTo: '' } //
 ];
 
-// for routing
+// for routing display
 export { routes };
 // for routing
 @NgModule({
