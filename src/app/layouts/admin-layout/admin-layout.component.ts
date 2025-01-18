@@ -11,11 +11,14 @@ export class AdminLayoutComponent implements OnInit {
   token:any;
   userData:any;
   email:any;
+  name:any;
 
   ngOnInit(): void {
     this.token=localStorage.getItem('token');
     this.userData=jwtDecode(this.token);
+
     this.email =this.userData.email;
+    this.name=this.userData.name;
     console.log(this.token);
     console.log(this.userData);
     
