@@ -6,6 +6,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthGuard } from '../guard/auth.guard';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -61,7 +62,8 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
     ToastrModule.forRoot(), 
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule
   ],
   providers: [
     provideClientHydration()
