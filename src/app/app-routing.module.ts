@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { AuthGuard } from '../guard/auth.guard';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -13,6 +14,8 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { ReportComponent } from './report/report.component';
 import { FrontendLayoutComponent } from './layouts/frontend-layout/frontend-layout.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+
 
 
 const routes: Routes = [
@@ -45,10 +48,11 @@ const routes: Routes = [
     path:'admin',
     component: AdminLayoutComponent,
     children:[
+      {path:'dashboard',component:DashboardComponent}
 
 
-
-    ]
+    ],
+    canActivate:[AuthGuard]
   },
   //
   {path: '**', redirectTo: '' } //

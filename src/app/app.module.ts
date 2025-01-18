@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule,Routes } from '@angular/router';
+import { ToastrModule } from 'ngx-toastr';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { AuthGuard } from '../guard/auth.guard';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +26,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { ReportComponent } from './report/report.component';
 import { FrontendLayoutComponent } from './layouts/frontend-layout/frontend-layout.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
 
 
 
@@ -44,12 +50,18 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
     ReportComponent,
     FrontendLayoutComponent,
     AdminLayoutComponent,
+    DashboardComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule,
+    ToastrModule.forRoot(), 
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration()
